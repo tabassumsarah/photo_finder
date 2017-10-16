@@ -1,0 +1,25 @@
+<section id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 leftcol">
+        <p>PhotoFinder, bulit with Angular2 & Typescript.
+        Powered by Flickr API.</p>
+        <br>
+      </div>
+      <div class="col-md-4">
+        <p>This app lets you search flicker. You can search using any tag you want i.e cat, tree etc. Poplular tag/s will be shown as suggestion if your tag mathches one of them. </p>
+        <br>
+        <app-search-result *ngFor="let result of results" [result]="result">
+        </app-search-result>
+      </div>
+      <div class="col-md-6">
+        
+        <h2>Flickr Search</h2>
+      
+        <app-search-box (loading)="loading = $event" (results)="updateResults($event)"></app-search-box>
+        <p>This is live serach box, where as you type you can see your results displayed in the website. This box waits for you to finish your current word so that it does not search on every key stroke.</p>
+
+      </div>
+    </div>
+  </div>
+</section>
