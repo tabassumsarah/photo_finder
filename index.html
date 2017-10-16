@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <base href="." />
+  <title>Photo Finder</title>
+
+  <link data-require="bootstrap-css" data-semver="4.0.0-alpha.4" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" />
+  <link data-require="bootstrap@*" data-semver="4.0.5" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" />
+
+  <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet/less" type="text/css" href="style.less">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.7.3/less.min.js"></script>
+
+  <script src="https://unpkg.com/core-js@2.4.1/client/shim.min.js"></script>
+  <script src="https://unpkg.com/zone.js/dist/zone.js"></script>
+  <script src="https://unpkg.com/zone.js/dist/long-stack-trace-zone.js"></script>
+  <script src="https://unpkg.com/reflect-metadata@0.1.3/Reflect.js"></script>
+  <script src="https://unpkg.com/systemjs@0.19.31/dist/system.js"></script>
+  <script src="config.js"></script>
+  <script>
+    System.import('app')
+      .catch(console.error.bind(console));
+  </script>
+</head>
+
+<body id="page-top">
+  <section class="intro">
+    <div class="intro-body">
+      <div class="container">
+        <div class="row">
+          <section id="title-bar">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <h3>Welcome to Photo Finder</h3>
+                </div>
+              </div>
+            </div>
+          </section>
+         
+            <my-app>
+              Photo finder is loading up...
+            </my-app>
+         
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.2.min.js" integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk=" crossorigin="anonymous"></script>
+  <!--Bootstrap JS-->
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
+  </script>
+</body>
+
+</html>
